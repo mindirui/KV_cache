@@ -1,0 +1,37 @@
+# 1. 默认：忽略所有内容
+*
+
+# 2. 豁免 (取消忽略) 根目录下的重要文件
+#    ! 是 "不要忽略" 的意思
+!.gitignore
+!README.md
+!align.py
+!attention_analysis.py
+!attention_visualization.py
+!avg.py
+!featmap.py
+!hook_generator.py
+!inference_core.py
+!plot_analysis.py
+!runner.py
+!test.py
+
+# 3. 豁免 (取消忽略) 代码文件夹
+#    豁免文件夹本身 (如 !croco/)
+#    以及文件夹内的所有内容 (如 !croco/**)
+!blender_scripts/
+!blender_scripts/**
+!croco/
+!croco/**
+!dust3r/
+!dust3r/**
+
+# --- 你的修正 ---
+# 豁免 dataset/ (配置文件)
+!dataset/
+!dataset/**
+
+# 豁免 models/ (diffusion库代码)
+!models/
+!models/**
+# --- 修正结束 ---
